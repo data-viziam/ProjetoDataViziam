@@ -17,9 +17,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('website.urls')),  # rotas para home, sobre, contato
-    path('users/', include('users.urls')),  # rotas para login, cadastro
-    path('plots/', include('plots.urls')),  # rotas para plotagens e visualizações
+urlpatterns = [ # rotas
+    path('admin/', admin.site.urls), # URL do admin do Django
+    path('', include('website.urls')),  # URL da home, sobre, contato
+    path('users/', include('users.urls')),  # URL de login, cadastro, perfis
+    path('plots/', include('plots.urls')),  # URL das visualizações de gráficos
 ]

@@ -1,0 +1,47 @@
+﻿{% load static %} 
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Data Viziam{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/styles-header.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles-index.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles-footer.css' %}">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1><a href="{% url 'home' %}">Data Viziam</a></h1>
+            <p>Transforme seus dados de redes sociais em insights valiosos!</p>
+        </div>
+        <!-- Menu de Navegação -->
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Início</a></li>
+                <li><a href="{% url 'about' %}">Sobre</a></li>
+                <li><a href="{% url 'contact' %}">Contato</a></li>
+                <li><a href="{% url 'login' %}">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo da Página -->
+    <main>
+        {% block content %}
+        <!-- Conteúdo específico de cada página -->
+        {% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>Siga-nos nas redes sociais para atualizações e novidades:</p>
+            <p>Facebook | Instagram | Twitter</p>
+            <p>Para mais informações, entre em contato conosco pelo e-mail: <a href="mailto:contato@dataviziam.com">contato@dataviziam.com</a></p>
+            <p>&copy; 2025 Data Viziam. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

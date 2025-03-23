@@ -1,0 +1,258 @@
+﻿/* Reset básico */
+body, h1, h2, h3, p, a {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #ffffff; /* Texto branco por padrão */
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0; /* Reduzido para 20px */
+}
+
+/* Hero Section */
+.hero {
+    background-color: #10113f; /* Azul médio */
+    color: #ffffff; /* Texto branco */
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #f5dc3a; /* Texto amarelo */
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #ffffff; /* Texto branco */
+}
+
+.hero .btn {
+    background-color: #f5dc3a; /* Amarelo */
+    color: #060622; /* Azul escuro */
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.hero .btn:hover {
+    background-color: #ffffff; /* Branco */
+    color: #060622; /* Azul escuro */
+}
+
+/* Sobre o Produto */
+.about {
+    background-color: #060622; /* Azul escuro */
+    color: #ffffff; /* Texto branco */
+    padding: 50px 0;
+}
+
+.about h2 {
+    color: #f5dc3a; /* Texto amarelo */
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ffffff; /* Texto branco */
+}
+
+/* História do Nome */
+.history {
+    background-color: #10113f; /* Azul médio */
+    color: #ffffff; /* Texto branco */
+    padding: 50px 0;
+}
+
+.history h2 {
+    color: #f5dc3a; /* Texto amarelo */
+    margin-bottom: 20px;
+}
+
+.history p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ffffff; /* Texto branco */
+}
+
+/* Benefícios e Funcionalidades */
+.features {
+    background-color: #060622; /* Azul escuro */
+    color: #ffffff; /* Texto branco */
+    padding: 50px 0;
+}
+
+.features h2 {
+    color: #f5dc3a; /* Texto amarelo */
+    margin-bottom: 20px;
+}
+
+.feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.feature-item {
+    background-color: #10113f; /* Azul médio */
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1 1 calc(25% - 20px);
+    text-align: center;
+}
+
+.feature-item h3 {
+    color: #f5dc3a; /* Texto amarelo */
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    color: #ffffff; /* Texto branco */
+    font-size: 1rem;
+}
+
+/* Compromisso */
+.commitment {
+    background-color: #10113f; /* Azul médio */
+    color: #ffffff; /* Texto branco */
+    padding: 50px 0;
+}
+
+.commitment h2 {
+    color: #f5dc3a; /* Texto amarelo */
+    margin-bottom: 20px;
+}
+
+.commitment p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ffffff; /* Texto branco */
+}
+
+/* CTA */
+.cta {
+    background-color: #060622; /* Azul escuro */
+    color: #ffffff; /* Texto branco */
+    padding: 100px 0;
+    text-align: center;
+}
+
+.cta h2 {
+    color: #f5dc3a; /* Texto amarelo */
+    margin-bottom: 20px;
+}
+
+.cta p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #ffffff; /* Texto branco */
+}
+
+.cta .btn {
+    background-color: #f5dc3a; /* Amarelo */
+    color: #060622; /* Azul escuro */
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.cta .btn:hover {
+    background-color: #ffffff; /* Branco */
+    color: #060622; /* Azul escuro */
+}
+
+/* Estilos para a página Sobre */
+.about h1 {
+    font-size: 2.5rem;
+    color: #f5dc3a; /* Amarelo */
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ffffff; /* Branco */
+}
+
+/* Estilos para a página Contato */
+.contact h1 {
+    font-size: 2.5rem;
+    color: #f5dc3a; /* Amarelo */
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ffffff; /* Branco */
+}
+
+.contact form {
+    margin-top: 20px;
+}
+
+.contact .form-group {
+    margin-bottom: 15px;
+}
+
+.contact label {
+    display: block;
+    font-size: 1rem;
+    color: #ffffff; /* Branco */
+    margin-bottom: 5px;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact .btn {
+    background-color: #f5dc3a; /* Amarelo */
+    color: #060622; /* Azul escuro */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact .btn:hover {
+    background-color: #ffffff; /* Branco */
+    color: #060622; /* Azul escuro */
+}
+
+.contact .contact-info {
+    margin-top: 30px;
+}
+
+.contact .contact-info h2 {
+    font-size: 2rem;
+    color: #f5dc3a; /* Amarelo */
+    margin-bottom: 15px;
+}
+
+.contact .contact-info p {
+    font-size: 1rem;
+    color: #ffffff; /* Branco */
+}
+
+/* Estilos para o título da página de Login */
+.login h1 {
+    font-size: 2.5rem;  /* Tamanho grande */
+    color: #f5dc3a;     /* Amarelo */
+    margin-bottom: 10px;
+    text-align: center; /* Centralizado */
+}

@@ -1,0 +1,31 @@
+﻿{% extends 'base.html' %}
+{% block title %}Login - Data Viziam{% endblock %}
+{% block content %}
+    <section class="login">
+        <div class="container">
+            <h1>Login</h1>  <!-- Título grande e amarelo -->
+            <p>Faça login para acessar sua conta.</p>
+            
+            <!-- Formulário de Login -->
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" required>
+                </div>
+                <button type="submit" class="btn">Entrar</button>
+            </form>
+
+            <!-- Link "Esqueceu sua senha?" -->
+            <p class="forgot-password">
+                <a href="#">Esqueceu sua senha?</a>
+            </p>
+
+            <!-- Link para Cadastro -->
+            <p class="register-link">Não tem uma conta? <a href="{% url 'new_user_login' %}">Cadastre-se aqui</a>.</p>
+        </div>
+    </section>
+{% endblock %}

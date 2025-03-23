@@ -1,0 +1,35 @@
+﻿{% extends 'base.html' %}
+{% load static %} 
+
+{% block title %}Início - Data Viziam{% endblock %}
+
+{% block content %}
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Transforme seus dados de redes sociais em insights valiosos!</h1>
+            <p>Visualize, entenda e otimize seu desempenho digital com a Data Viziam.</p>
+            <a href="{% url 'register' %}" class="btn">Junte-se a Nós</a>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <h1>Sobre a Data Viziam</h1>
+            <p>
+                A Data Viziam é um software inovador de visualização de dados projetado para facilitar a compreensão do desempenho de redes sociais, mesmo para aqueles que não têm experiência técnica. Com uma interface intuitiva e dashboards interativos, a plataforma transforma dados brutos em insights acionáveis, permitindo que criadores de conteúdo, pequenas empresas e profissionais de marketing tomem decisões mais informadas e otimizem suas estratégias digitais.
+            </p>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-register-box">
+                <h2>Não perca tempo tentando decifrar dados confusos!</h2>
+                <p>Experimente a Data Viziam agora e transforme informações em ação.</p>
+                <a href="{% url 'register' %}" class="btn">Cadastre-se gratuitamente</a>
+            </div>
+        </div>
+    </section>
+{% endblock %}

@@ -2,5 +2,5 @@
 from . import views
 
 urlpatterns = [
-    path('', views.home, name='plots'), # rota para página inicial dos gráficos
+    path('plots/', views.user_plots, name='user_plots'),
 ]

@@ -1,0 +1,50 @@
+﻿{% extends 'base.html' %}
+{% block title %}Login - Data Viziam{% endblock %}
+{% block content %}
+    <section class="login">
+        <div class="container">
+            <div class="login-register-box">
+                <h1>Login</h1>
+                <p>Faça login para acessar sua conta.</p>
+
+                <!-- Formulário de Login -->
+                <form action="{% url 'login' %}" method="post">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                        <!-- Mensagem de erro para o e-mail -->
+                        {% if messages %}
+                            {% for message in messages %}
+                                {% if 'email' in message.tags %}
+                                    <div class="error-message">{{ message }}</div>
+                                {% endif %}
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                    <div class="form-group">
+                        <label for="senha">Senha:</label>
+                        <input type="password" id="senha" name="senha" required>
+                        <!-- Mensagem de erro para a senha -->
+                        {% if messages %}
+                            {% for message in messages %}
+                                {% if 'senha' in message.tags %}
+                                    <div class="error-message">{{ message }}</div>
+                                {% endif %}
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                    <button type="submit" class="btn">Entrar</button>
+                </form>
+
+                <!-- Link "Esqueceu sua senha?" -->
+                <p class="forgot-password">
+                    <a href="#">Esqueceu sua senha?</a>
+                </p>
+
+                <!-- Link para Cadastro -->
+                <p class="register-link">Não tem uma conta? <a href="{% url 'register' %}">Cadastre-se aqui</a>.</p>
+            </div>
+        </div>
+    </section>
+{% endblock %}

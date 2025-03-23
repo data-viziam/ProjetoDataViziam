@@ -1,16 +1,10 @@
 from django.shortcuts import render
 
 def home(request):
-    return render(request, 'website/index.html')
+    return render(request, 'website/home.html')
 
-def sobre(request):
+def about(request):
     return render(request, 'website/about.html')
 
-def contato(request):
+def contact(request):
     return render(request, 'website/contact.html')
-
-def login(request):
-    return render(request, 'website/login.html')
-
-def login(request):
-    return render(request, 'website/new_user_login.html')

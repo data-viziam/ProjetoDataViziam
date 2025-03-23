@@ -13,10 +13,10 @@
             <div class="company-info">
                 <h3>Informações da Empresa</h3>
                 <div class="info-card">
-                    <p><strong>Nome:</strong> Empresa XYZ</p>
-                    <p><strong>E-mail:</strong> contato@empresaxyz.com</p>
-                    <p><strong>Plano:</strong> Premium</p>
-                    <p><strong>Data de Expiração:</strong> 31/12/2025</p>
+                    <p><strong>Nome:</strong> {{ user.username }}</p>
+                    <p><strong>E-mail:</strong> {{ user.email }} </p>
+                    <p><strong>Plano:</strong> {{ user.plan }}</p>
+                    <p><strong>Data de Expiração:</strong> {{user.expiration_date}} </p>
                 </div>
             </div>
 

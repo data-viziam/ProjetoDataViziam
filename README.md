@@ -21,14 +21,12 @@
 
 ```plaintext
 ProjetoDataViziam/
-│── data_viziam_project/   # 🎯 Diretório principal do Django
-│   │── settings.py        # 📌 Configurações do Django
-│   │── urls.py            # 🌍 Rotas principais
-│   │── wsgi.py / asgi.py  # 🔥 Servidor Django
-│── manage.py              # ⚙️ Comando principal do Django
-│── dataviziam/            # 📢 Páginas institucionais (home, contato, etc.)
-│── users/                 # 👤 Login, perfis e autenticação
-│── plots/                 # 📊 Página de gráficos e Dash
+├── data_viziam_project/          # 🎯 Diretório principal do Django
+├── manage.py                     # ⚙️ Comando principal do Django
+├── website/                      # 🌐 Páginas institucionais
+├── users/                        # 👤 Autenticação e perfis de usuários
+├── plots/                        # 📊 Visualização de gráficos
+├── static/                       # 🎨 Arquivos estáticos (CSS, JS, imagens)
 ```
 
 ---

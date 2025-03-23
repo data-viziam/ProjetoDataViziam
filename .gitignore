@@ -1,0 +1,25 @@
+﻿# Ignorar o banco de dados SQLite
+db.sqlite3
+
+# Ignorar arquivos de ambiente
+.env
+.env.local
+
+# Ignorar pastas de dependências
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+# Ignorar arquivos de IDE
+.vscode/
+.idea/
+
+# Ignorar arquivos de cache e logs
+*.log
+*.pot
+*.pyc
+*.sqlite3
